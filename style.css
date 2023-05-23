@@ -3,6 +3,129 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-flow: row-reverse;
+    background-color: black;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+#second-half-of-page {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 60vw;
+}
+
+#second-half-of-page>* {
+    height: 25vh;
+}
+
+
+p {
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#text {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-style: none;
+    font-weight: 900;
+
+}
+
+button:hover {
+    font-style: italic;
+
+}
+
+#typed-inputs {
+    border-color: red;
+    border-bottom-width: 10%;
+    gap: 3vw;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(11, 11, 11, 1) 40%);
+    margin-bottom: 3vh;
+}
+
+#typed-inputs>* {
+    width: 30%;
+}
+
+input {
+    border-color: gray;
+    background-color: black;
+    border-radius: 5px;
+    color: gray;
+    width: 100%;
+}
+
+label {
+    color: gray;
+}
+
+
+input[type="submit"] {
+    border-color: white;
+    border-radius: 5px;
+    color: white;
+    height: 50px;
+    width: 20%;
+    font-weight: bolder;
+    font-size: 75%;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+}
+
+#logo {
+    width: 40vw;
+    height: 10vh;
+    z-index: 9;
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#half-of-page {
+    display: flex;
+    align-items: center;
+}
+
+
+
+#typed-inputs {
+    display: flex;
+}
+
+.staircase {
+    width: 40vw;
+    height: 100vh;
+    z-index: -2;
+}
+
+#log-in-group {
+    display: flex;
 }
