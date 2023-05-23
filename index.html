@@ -7,31 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+
 </head>
 
 <body>
-    <form>
-        <label for="first-name">FIRST NAME</label><br>
-        <input type="text" id="first-name"><br>
-        <label for="email">EMAIL</label><br>
-        <input type="text" id="email"><br>
-        <label for="password">PASSWORD</label><br>
-        <input type="text" id="password"><br>
-        <label for="last-name">LAST NAME</label><br>
-        <input type="text" id="last-name"><br>
-        <label for="phone-number">PHONE NUMBER</label><br>
-        <input type="text" id="pnumber"><br>
-        <label for="confirm-password">CONFIRM PASSWORD</label><br>
-        <input type="text" id="confirm-password"><br>
-    </form>
-    <div>
+    <div id="second-half-of-page">
+        <div id="text">
+
+            <p>
+                This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
+                Necessitatibus, commodi! <br>
+
+                Sign up now to get started. <br>
+
+            <p>You <i>know</i> you want to.</p>
+            </p>
+        </div>
+        <form>
+            <div id="typed-inputs">
+                <div id="first-half-of-form">
+                    <label for="first-name">FIRST NAME</label><br>
+                    <input type="text" id="first-name" required><br>
+                    <label for="email">EMAIL</label><br>
+                    <input type="email" id="email" required><br>
+                    <label for="password">PASSWORD</label><br>
+                    <input type="password" id="password" required><br>
+                </div>
+                <div id="second-half-of-form">
+                    <label for="last-name">LAST NAME</label><br>
+                    <input type="text" id="last-name" required><br>
+                    <label for="phone-number">PHONE NUMBER</label><br>
+                    <input type="text" id="phone-number" pattern="[0-9]{10}" required><br>
+                    <label for="confirm-password">CONFIRM PASSWORD</label><br>
+                    <input type="password" id="confirm-password" required><br>
+                </div>
+            </div>
+            <div id="submit-group">
+                <input type="submit" value="Create Account" id="create-account" />
+            </div>
+        </form>
+        <div>
+            <div id="log-in-group">
+                <p>Already have an account?</p>
+                <button>Log in</button>
+            </div>
+        </div>
+    </div>
+    <div id="half-of-page">
+        <div id="logo">
+            <img src="helmet-1.1s-200px (1).png" class="helmet" alt="Image of a helmet">
+            <h1>Bostrom</h1>
+        </div>
         <img src="mike-hindle-CWtYeoWh-DM-unsplash.jpg" class="staircase" alt="Image of a staircase">
     </div>
-    <div>
-        <button id="create-account">Create Account</button>
-        <p>Already have an account?</p>
-        <button>Log in</button>
-    </div>
 </body>
+
+<script src="script.js"></script>
 
 </html>
